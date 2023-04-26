@@ -1,11 +1,24 @@
-import React from 'react';
+import React from "react";
+import { useLoaderData } from "react-router-dom";
+import AllProject from "./AllProject";
 
 const Projects = () => {
-    return (
-        <div  style={{height:'100vh'}}>
-            <h2>Projects</h2>
-        </div>
-    );
+  const projectData = useLoaderData();
+  console.log(projectData);
+  return (
+    <>
+      <div className="text-center mt-16">
+        <h6>My Recent Work</h6>
+        <h3 className="text-3xl">Portfolio</h3>
+      </div>
+
+      <div className="grid grid-cols-3">
+        {projectData.map((project) => (
+          <AllProject key={project.id} project={project}></AllProject>
+        ))}
+      </div>
+    </>
+  );
 };
 
 export default Projects;

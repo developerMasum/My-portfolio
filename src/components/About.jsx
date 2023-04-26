@@ -1,7 +1,10 @@
 import React from "react";
-import picture from "../assets/photo.jpg";
+
 import { BsAward, BsPeople } from 'react-icons/bs';
 import { AiFillProject} from 'react-icons/ai';
+import Lottie from "lottie-react";
+
+import about from '../assets/about.json'
 
 
 const About = () => {
@@ -15,9 +18,9 @@ const About = () => {
       </div>
 
       <div className="flex 	">
-        <div className="ml-40">
-          <img src={picture} alt="" className="w-[50%]" />
-        </div>
+       
+        <Lottie animationData={about} loop={true} className="mr-32" />
+        
         <div className=" ">
            <div className="flex gap-6 mr-40 ">
            <div className="bg-blue-300 px-8 py-3 rounded-md  shadow-lg items-center hover:bg-green-400 hover:border-teal-200"> <BsAward className="text-3xl" /> <h3 className="mt-12">Experience</h3> <h5>2+ Years</h5> <h6>Working</h6> </div>

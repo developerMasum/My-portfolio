@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
+import { GiBrain } from 'react-icons/Gi';
+
+import { BsCardChecklist } from 'react-icons/Bs';
+import farhan from '../assets/farhan.jpg'
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,8 +14,8 @@ const Header = () => {
       <div className="relative flex items-center justify-between">
         {/* Logo Section */}
         <Link to="/" className="inline-flex items-center text-3xl">
-          <span className="ml-2  font-bold tracking-wide text-gray-800">
-            Farhan<span className="text-blue-300">Adnan</span>
+          <span className="ml-2  font-bold tracking-wide text-gray-800 flex ">
+          <ion-icon name="logo-foursquare" className='text-blue-800'></ion-icon>  
           </span>
         </Link>
 
@@ -21,7 +26,7 @@ const Header = () => {
               to="/"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              Home
+              <ion-icon  name="home-outline"></ion-icon>
             </NavLink>
           </li>
           <li>
@@ -29,7 +34,7 @@ const Header = () => {
               to="/about"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              About
+          <ion-icon name="albums-outline"></ion-icon>
             </NavLink>
           </li>
           <li>
@@ -37,7 +42,7 @@ const Header = () => {
               to="/experience"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              Experience
+              {GiBrain}
             </NavLink>
           </li>
           <li>
@@ -45,12 +50,12 @@ const Header = () => {
               to="/projects"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              Projects
+            {BsCardChecklist}
             </NavLink>
           </li>
         </ul>
         <div>
-          <button className="p-2 rounded btno"> Contact </button>
+          <button className="px-5 py-2 rounded-lg bg-blue-400 text-white  "> Hire Me </button>
         </div>
 
         {/* Mobile Navbar Section */}
@@ -105,7 +110,7 @@ const Header = () => {
                     <li>
                       <Link
                         to="/applied"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400 "
                       >
                         Applied Jobs
                       </Link>
