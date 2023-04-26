@@ -53,6 +53,14 @@ const Header = () => {
             {BsCardChecklist}
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+            <ion-icon name="send-outline"></ion-icon>
+            </NavLink>
+          </li>
         </ul>
         <div>
           <button className="px-5 py-2 rounded-lg bg-blue-400 text-white  "> Hire Me </button>

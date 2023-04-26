@@ -11,6 +11,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Home from './components/Home';
+import ContactMe from './components/ContactMe';
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
         path:'/projects',
         element: <Projects />,
         loader: ()=> fetch('ProjectData.json')
+      },
+      {
+        path:'/contact',
+        element:<ContactMe />,
+        
       }
     ]
    

@@ -23,9 +23,14 @@ const About = () => {
         
         <div className=" ">
            <div className="flex gap-6 mr-40 ">
-           <div className="bg-blue-300 px-8 py-3 rounded-md  shadow-lg items-center hover:bg-green-400 hover:border-teal-200"> <BsAward className="text-3xl" /> <h3 className="mt-12">Experience</h3> <h5>2+ Years</h5> <h6>Working</h6> </div>
-            <div className="bg-blue-300 px-8 py-3 rounded-md hover:bg-green-400 shadow-lg"> <BsPeople className="text-3xl" /> <h3 className="mt-12">Experience</h3> <h5>2+ Years</h5> <h6>Working</h6> </div>
-            <div className="bg-blue-300 px-8 py-3 rounded-md hover:bg-green-400 shadow-lg"> <AiFillProject className="text-3xl" /> <h3 className="mt-12">Experience</h3> <h5>2+ Years</h5> <h6>Working</h6> </div>
+
+           <div className="bg-blue-300 px-8 py-3 rounded-md   w-40  shadow-lg items-center hover:bg-green-400 hover:border-teal-200"> <BsAward className="text-3xl" /> <h3 className="mt-12">Experience</h3> <h5> 6 Months</h5> <h6>Working</h6> </div>
+
+
+            <div className="bg-blue-300 px-8 py-3 rounded-md w-40 hover:bg-green-400 shadow-lg"> <BsPeople className="text-3xl" /> <h3 className="mt-12">Clients</h3> <h5>20+ people</h5> <h6>Worldwide</h6> </div>
+
+
+            <div className="bg-blue-300 px-8 py-3 rounded-md w-40 hover:bg-green-400 shadow-lg"> <AiFillProject className="text-3xl" /> <h3 className="mt-12">Projects</h3> <h5>20+ Done</h5> <h6></h6> </div>
            </div>
            <div className="mt-5 font-semibold">
             Hello !! My name is Farhan Adnan Masum. I want to gain confidence and fame <br /> using my potential in this position, and express my innovative creative skills <br /> for self and company growth. I am a hardworking and quick learner person. <br /> I believe hard work is the only way to success. Love to learn new technology <br /> and try to improve myself.

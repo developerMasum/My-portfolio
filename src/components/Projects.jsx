@@ -12,7 +12,7 @@ const Projects = () => {
         <h3 className="text-3xl">Portfolio</h3>
       </div>
 
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3  mr-12  ml-16 ">
         {projectData.map((project) => (
           <AllProject key={project.id} project={project}></AllProject>
         ))}
