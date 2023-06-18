@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { GiBrain } from 'react-icons/Gi';
+import {AiOutlineFundProjectionScreen } from 'react-icons/ai';
 
-import { BsCardChecklist } from 'react-icons/Bs';
-import farhan from '../assets/farhan.jpg'
+// import { BsCardChecklist } from 'react-icons/Bs'; 
+
 
 
 const Header = () => {
@@ -50,7 +51,8 @@ const Header = () => {
               to="/projects"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-            {BsCardChecklist}
+            {/* {BsCardChecklist} */}
+            <AiOutlineFundProjectionScreen />
             </NavLink>
           </li>
           <li>

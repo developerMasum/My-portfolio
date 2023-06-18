@@ -7,7 +7,9 @@ import { SiHtml5,SiTailwindcss,SiBootstrap } from "react-icons/si";
 
 const Experience = () => {
   return (
-    <section className="my-container">
+    <section data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"  className="my-container">
       <div className="text-center mb-20">
         <h2>
           <>What Skills I Have</>
@@ -16,7 +18,7 @@ const Experience = () => {
       </div>
 
       <div className="flex gap-6 mx-auto mr-20 ">
-        <div className="card w-[50%]  card-body px-12 py-8  bg-primary text-primary-content">
+        <div  className="card w-[50%]  card-body px-12 py-8  bg-primary text-primary-content">
           <div className="">
             <h2 className="card-title text-center  text-2xl ml-2 mb-5">
               Frontend Development

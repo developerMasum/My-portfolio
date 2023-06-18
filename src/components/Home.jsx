@@ -12,7 +12,8 @@ import { FiDownload, FiPhoneCall } from "react-icons/Fi";
 const Home = () => {
   return (
     <>
-      <div className="my-container flex flex-col items-center justify-between lg:flex-row">
+      <div  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" className="my-container flex flex-col items-center justify-between lg:flex-row">
         <div className="mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0">
           <div className="max-w-xl mb-6 lg:mt-8">
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
@@ -69,7 +70,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="relative lg:w-1/2 ">
+        <div  className="relative lg:w-1/2 ">
           <div className="w-full lg:w-4/5 lg:ml-auto h-56   sm:h-96">
             {/* <img src={photo} alt="" className="w-[75%]  rounded-t-full rounded-b-full"  /> */}
             <div className="relative  right-32 w-88">
