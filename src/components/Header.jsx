@@ -14,9 +14,9 @@ const Header = () => {
     <div className="bg-green-50 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
         {/* Logo Section */}
-        <Link to="/" className="inline-flex items-center text-3xl">
-          <span className="ml-2  font-bold tracking-wide text-gray-800 flex ">
-          <ion-icon name="logo-foursquare" className='text-blue-800'></ion-icon>  
+        <Link to="/" className="inline-flex items-center text-xl">
+          <span className="ml-2 space-x-1 tracking-wider  font-bold  text-gray-800 flex ">
+          masum.dev
           </span>
         </Link>
 
@@ -27,7 +27,7 @@ const Header = () => {
               to="/"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              <ion-icon  name="home-outline"></ion-icon>
+            Home
             </NavLink>
           </li>
           <li>
@@ -35,7 +35,7 @@ const Header = () => {
               to="/about"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-          <ion-icon name="albums-outline"></ion-icon>
+        About
             </NavLink>
           </li>
           <li>
@@ -43,7 +43,7 @@ const Header = () => {
               to="/experience"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              {GiBrain}
+            Experience
             </NavLink>
           </li>
           <li>
@@ -52,7 +52,7 @@ const Header = () => {
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
             {/* {BsCardChecklist} */}
-            <AiOutlineFundProjectionScreen />
+          Projects
             </NavLink>
           </li>
           <li>
@@ -60,7 +60,7 @@ const Header = () => {
               to="/contact"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-            <ion-icon name="send-outline"></ion-icon>
+           Contact
             </NavLink>
           </li>
         </ul>
